@@ -1,5 +1,8 @@
 const axios = require('axios');
 
+componentDidMount() {
+  
+
 function setData(res){
   var data;
 
@@ -12,7 +15,6 @@ async function getData(url) {
     const response = await axios.get(url);
      setData(response);
  }
-  
-  getData('https://api.warframestat.us/ps4')
+}
 
-  export default getData('https://api.warframestat.us/ps4');
+  export default data;
