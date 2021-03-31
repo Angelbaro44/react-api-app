@@ -1,14 +1,18 @@
 const axios = require('axios');
 
-// Make a request for a user with a given ID
-axios.get('https://api.warframestat.us/ps4/arbitration')
-  .then(function (response) {
-console.log('this');    console.log(response.data);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
+function setData(res){
+  var data;
+
+ data = res;
+console.log(data);
+return data
+}
+
+async function getData(url) {
+    const response = await axios.get(url);
+     setData(response);
+ }
+  
+  getData('https://api.warframestat.us/ps4')
+
+  export default getData('https://api.warframestat.us/ps4');
