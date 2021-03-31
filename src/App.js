@@ -1,25 +1,20 @@
 // @flow
 import * as React from 'react';
 import { data } from "./api res/Arbitrations";
-type Props = {
-  
-};
-type State = {
-  
-};
+import React, { Component } from 'react';
 
 
-
-export class App extends React.Component<Props, State>{
+class App extends Component {
   render() {
-    console.log(data)
     return (
       <div>
         
       </div>
     );
-  };
-};
+  }
+}
+
+export default App;
 export default App;
 
 
